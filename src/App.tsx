@@ -1,8 +1,11 @@
+import GlobalStyle from "./styles/Global"
+
 function App() {
 
   return (
     <>
-      <h1>Olá Mundo</h1>
+      < GlobalStyle/>
+      <button className="defaultBtn">oi mundo</button>
     </>
   )
 }
