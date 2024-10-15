@@ -1,26 +1,32 @@
 import { createGlobalStyle } from "styled-components";
 
-const globalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
     }
 
-    h1, h2, h3, h4, h5, h6, p, span, strong {
+    h1, h2, h3, h4, h5, h6, p, span, strong, div {
         color: #FFFFFF;
         font-family: "Open Sans", sans-serif;
     }
 
-    body{
-        background-color: #111111;
+    #root{
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        background-color: #111111;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
     }
 
     .card{
@@ -52,4 +58,4 @@ const globalStyle = createGlobalStyle`
     }
 `
 
-export default globalStyle;
+export default GlobalStyle;
