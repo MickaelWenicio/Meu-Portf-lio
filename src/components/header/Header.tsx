@@ -5,18 +5,18 @@ const Header = () => {
     <Container>
         <div>
           <div>
-            <h1>oi</h1>
+            <h1>Logo</h1>
           </div>
           <div className='navBar'>
             <nav>
               <ul>
-                <li className='emphasisText'>
+                <li className='descriptionText'>
                   Sobre
                 </li>
-                <li>
+                <li className='descriptionText'>
                   Experiências
                 </li>
-                <li>
+                <li className='descriptionText'>
                   Projetos
                 </li>
               </ul>

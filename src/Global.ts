@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
-    *{
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -11,10 +11,14 @@ const GlobalStyle = createGlobalStyle`
 
     h1, h2, h3, h4, h5, h6, p, span, strong, div {
         color: #FFFFFF;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Archivo", sans-serif;
     }
 
-    #root{
+    p, span, li {
+        font-size: 1.10em;
+    }
+
+    #root {
         width: 100%;
         height: 100%;
         background-color: #111111;
@@ -24,24 +28,25 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
     }
 
-    body{
+    body {
         width: 100vw;
         height: 100vh;
     }
 
-    .card{
+    .card {
         background-color: #151515;
     }
 
-    .emphasisText{
-        color: #986DFF,
+    .emphasisText {
+        color: #986DFF;
+        cursor: pointer;
     }
 
-    .descriptionText{
-        color: #9CA3AF,
+    .descriptionText {
+        color: #9CA3AF;
     }
 
-    .defaultBtn{
+    .defaultBtn {
         background-color:#986DFF;
         height: 3.3em;
         padding: 0 2em;
@@ -52,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
         transition: all 0.3s ease-in-out;
 
-        &:hover{
+        &:hover {
             padding: 0 2.5em;
         }
     }

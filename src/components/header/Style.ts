@@ -9,7 +9,7 @@ const Container = styled.header`
   background-color: #111111;
 
   div:first-child{
-    width: 60%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -26,7 +26,18 @@ const Container = styled.header`
         display: flex;
         flex-direction: row;
         list-style: none;
-        gap: 2em;
+        gap: 2.5em;
+
+        li{
+          font-weight: 500;
+          cursor: pointer;
+          transition: all ease-in-out .2s;
+
+          &:hover{
+            color: #ffffff;
+
+          }
+        }
       }
     }
   }
