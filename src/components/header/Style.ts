@@ -9,7 +9,7 @@ const Container = styled.header`
   background-color: #111111;
 
   div:first-child{
-    width: 80%;
+    width: var(--default-width);
     height: 100%;
     display: flex;
     align-items: center;
@@ -30,6 +30,7 @@ const Container = styled.header`
 
         li{
           font-weight: 500;
+          color: var(--description);
           cursor: pointer;
           transition: all ease-in-out .2s;
 

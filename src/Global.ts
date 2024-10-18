@@ -9,13 +9,24 @@ const GlobalStyle = createGlobalStyle`
         font-family: "Open Sans", sans-serif;
     }
 
+    :root{
+        --default-width: 80%;
+        --emphasis: #986DFF;
+        --description: #9CA3AF;
+    }
+
     h1, h2, h3, h4, h5, h6, p, span, strong, div {
         color: #FFFFFF;
         font-family: "Archivo", sans-serif;
+        line-height: 1.5em;
     }
 
-    p, span, li {
-        font-size: 1.10em;
+    li {
+        font-size: 18px;
+    }
+
+    p, span{
+        font-size: 20px;
     }
 
     #root {
@@ -35,15 +46,6 @@ const GlobalStyle = createGlobalStyle`
 
     .card {
         background-color: #151515;
-    }
-
-    .emphasisText {
-        color: #986DFF;
-        cursor: pointer;
-    }
-
-    .descriptionText {
-        color: #9CA3AF;
     }
 
     .defaultBtn {
