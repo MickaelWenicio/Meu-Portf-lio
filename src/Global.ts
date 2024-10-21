@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-
     * {
         padding: 0;
         margin: 0;
@@ -18,6 +17,26 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.10em;
     }
 
+    :root{
+        --default-width: 60%;
+        --emphasis: #986DFF;
+        --description: #9CA3AF;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, span, strong, div {
+        color: #FFFFFF;
+        font-family: "Archivo", sans-serif;
+        line-height: 1.5em;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    p, span{
+        font-size: 20px;
+    }
+
     #root {
         width: 100%;
         height: 100%;
@@ -26,12 +45,24 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-y: scroll;
     }
 
     body {
         width: 100vw;
         height: 100vh;
     }
+
+    *::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--emphasis);
+        border-radius: 20px;
+    }   
+
+
 
     .card {
         background-color: #151515;
