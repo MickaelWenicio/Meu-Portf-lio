@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
 
     #root {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #111111;
         overflow-y: auto;
         display: flex;
@@ -51,10 +51,12 @@ const GlobalStyle = createGlobalStyle`
     body {
         width: 100vw;
         height: 100vh;
+        overflow: hidden;
     }
 
     *::-webkit-scrollbar {
         width: 8px;
+        
     }
 
     *::-webkit-scrollbar-thumb {
